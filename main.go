@@ -3,10 +3,13 @@ package main
 import (
 	"flag"
 	"fmt"
+	"funtemps/conv"
 )
 
 // Definerer flag-variablene i hoved-"scope"
 var fahr float64
+var cels float64
+var kelv float64
 var out string
 var funfacts string
 
@@ -32,7 +35,7 @@ func init() {
 }
 
 func main() {
-
+	fmt.Println(conv.FarenheitToKelvin(50))
 	flag.Parse()
 
 	/**
