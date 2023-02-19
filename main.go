@@ -37,7 +37,6 @@ func init() {
 }
 
 func main() {
-	fmt.Println(conv.FarenheitToKelvin(50))
 	flag.Parse()
 
 	/**
@@ -73,7 +72,7 @@ func main() {
 		// Kalle opp funksjonen FahrenheitToCelsius(fahr), som da
 		// skal returnere °C
 		//fmt.Println("0°F er -17.78°C")
-		fmt.Printf("%g°F er %g°C", fahr, conv.FarhenheitToCelsius(fahr))
+		fmt.Printf("%.2f°F er %.2f°C", fahr, conv.FarhenheitToCelsius(fahr))
 	}
 
 	if out == "F" && isFlagPassed("C") {
