@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"funtemps/conv"
+	"github.com/vicnorm/funtemps"
 )
 
 // Definerer flag-variablene i hoved-"scope"
